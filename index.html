@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1120">
+  <meta name="description" content="Portfolio of Ferhat Ullah Khan — Senior .NET and Azure Full Stack Developer, working with C#, ASP.NET Core, Angular, React and cloud engineering.">
+  <meta property="og:title" content="Ferhat Ullah Khan | .NET & Azure Full Stack Developer">
+  <meta property="og:description" content="Building dependable enterprise software with .NET, Angular, React and Microsoft Azure.">
+  <meta property="og:type" content="website">
+  <title>Ferhat Ullah Khan — .NET & Azure Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#0b1120;--bg2:#0e1729;--ink:#f1f5fb;--muted:#a1afc4;--line:rgba(178,194,220,.14);--accent:#79e0c4;--accent2:#8ab7ff;--card:#111e32;--max:1140px}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 75% 0%,rgba(69,115,177,.15),transparent 35%),var(--bg);font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:6px}
+    .shell{width:min(calc(100% - 48px),var(--max));margin-inline:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(11,17,32,.91);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:74px}
+    .brand{font:700 21px "Space Grotesk",sans-serif;letter-spacing:-.07em;white-space:nowrap}.brand span{color:var(--accent)}
+    .nav-links{display:flex;align-items:center;gap:25px}.nav-links a{font-size:13px;font-weight:600;color:#bdc9da}.nav-links a:hover{color:var(--accent)}
+    .nav-links .nav-cta{color:var(--bg);background:var(--accent);border-radius:8px;padding:10px 15px}.nav-links .nav-cta:hover{color:var(--bg);background:#a8f0de}
+    main{overflow:hidden}
+    .hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;padding:124px 0 112px}
+    .eyebrow{font-size:12px;letter-spacing:.19em;text-transform:uppercase;font-weight:700;color:var(--accent);margin:0 0 22px}
+    h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.15;letter-spacing:-.045em}
+    h1{font-size:clamp(48px,6vw,79px);margin:0 0 18px;font-weight:700}
+    h1 strong{font-weight:700;color:var(--accent)}
+    .hero-title{font-size:clamp(20px,2.2vw,27px);letter-spacing:-.03em;margin:0 0 22px;color:#dbe5f3;font-weight:600}
+    .lede{font-size:16px;line-height:1.8;color:var(--muted);max-width:625px;margin:0 0 31px}
+    .buttons{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border:1px solid var(--line);border-radius:9px;font-size:14px;font-weight:700;transition:transform .2s,background .2s}
+    .btn:hover{transform:translateY(-2px)}.btn-primary{color:#08131e;background:var(--accent);border-color:var(--accent)}.btn-primary:hover{background:#b0f7e4}
+    .btn-secondary{background:rgba(255,255,255,.03)}.btn-secondary:hover{background:rgba(255,255,255,.09)}
+    .hero-art{position:relative;isolation:isolate;max-width:425px;width:100%;justify-self:end}
+    .art-glow{position:absolute;inset:12% 0;z-index:-1;filter:blur(65px);background:radial-gradient(circle,rgba(71,152,194,.19),transparent 70%)}
+    .terminal{border:1px solid rgba(165,195,226,.21);border-radius:17px;box-shadow:0 32px 100px rgba(0,0,0,.26);background:#101b2b;overflow:hidden;transform:rotate(1.1deg)}
+    .term-top{height:48px;display:flex;align-items:center;padding:0 19px;gap:8px;background:#18263a;border-bottom:1px solid var(--line)}
+    .dot{width:9px;height:9px;border-radius:50%;background:#eb7d7b}.dot:nth-child(2){background:#e9c477}.dot:nth-child(3){background:#7bcfa7}
+    .term-label{margin-left:auto;font-size:11px;color:#899bb4;font-weight:700;letter-spacing:.05em}
+    .term-code{padding:28px 27px 32px;font:14px/2.1 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;color:#c1d5e7}
+    .code-teal{color:#7bdec5}.code-blue{color:#a7c5ff}.code-warm{color:#f6cba0}
+    .status{display:flex;align-items:center;gap:10px;color:#b6c9d9;font-size:13px;margin-top:22px}
+    .status i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(121,224,196,.09)}
+    .rule{border-top:1px solid var(--line)}
+    section{padding:100px 0;scroll-margin-top:85px}
+    .section-top{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:36px}
+    h2{font-size:clamp(30px,3.2vw,44px);margin:0 0 10px}h3{font-size:21px;margin:0 0 10px}
+    .section-copy{color:var(--muted);max-width:630px;margin:0;font-size:15px}
+    .pill{display:inline-block;font-size:11px;font-weight:700;color:var(--accent);background:rgba(121,224,196,.09);border:1px solid rgba(121,224,196,.22);border-radius:999px;padding:5px 12px;letter-spacing:.03em}
+    .three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{padding:28px;background:linear-gradient(155deg,rgba(27,44,66,.87),rgba(14,24,40,.95));border:1px solid var(--line);border-radius:15px;min-width:0}
+    .card-icon{display:grid;place-items:center;border-radius:10px;width:43px;height:43px;color:var(--accent);font:bold 19px "Space Grotesk",sans-serif;background:rgba(121,224,196,.09);margin-bottom:22px}
+    .card p,.project p{color:var(--muted);font-size:14px;line-height:1.8;margin:0}
+    .stack{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:11px;font-weight:600;color:#c4d5e7;background:rgba(148,177,210,.10);border:1px solid rgba(164,193,218,.11);border-radius:5px;padding:5px 9px}
+    .experience{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .experience .card{position:relative;padding-left:31px}.experience .card:before{content:"";position:absolute;left:0;top:29px;height:70px;width:3px;background:var(--accent);border-radius:4px}
+    .meta{font-size:12px;color:var(--accent2);font-weight:700;margin:0 0 10px}
+    .job{font-size:14px;color:#cbd7e7;margin:0 0 16px}
+    .list{margin:16px 0 0;padding-left:18px;color:var(--muted);font-size:14px}.list li{margin-bottom:10px}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .project .num{font:600 13px "Space Grotesk",sans-serif;color:var(--accent);margin-bottom:20px}
+    .project .kind{font-size:12px;color:var(--accent2);margin-bottom:12px}
+    .project-note{margin-top:22px;color:#96a7bf;font-size:12px;border-left:2px solid rgba(121,224,196,.4);padding-left:15px}
+    .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .skill-group{display:flex;align-items:flex-start;gap:18px;padding:22px 24px;background:var(--bg2);border:1px solid var(--line);border-radius:12px}
+    .skill-group strong{display:block;font-size:14px;margin-bottom:7px}.skill-group p{margin:0;color:var(--muted);font-size:13px}
+    .skill-mark{display:grid;place-items:center;background:rgba(138,183,255,.09);color:var(--accent2);font-weight:700;width:38px;height:38px;border-radius:9px;flex:none}
+    .cta-panel{background:linear-gradient(110deg,rgba(36,75,93,.45),rgba(18,34,54,.95));border:1px solid rgba(121,224,196,.2);padding:60px 55px;border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:35px}
+    .cta-panel p{color:var(--muted);max-width:580px;margin:0}
+    footer{border-top:1px solid var(--line);padding:29px 0 38px;color:var(--muted);font-size:12px}
+    footer .foot{display:flex;align-items:center;justify-content:space-between;gap:15px}footer a:hover{color:var(--accent)}
+    @media(max-width:900px){.hero{gap:35px;padding:80px 0}.hero-art{max-width:360px}.three,.projects{grid-template-columns:repeat(2,1fr)}.projects .project:last-child{grid-column:1/-1}}
+    @media(max-width:670px){.shell{width:min(calc(100% - 36px),var(--max))}.nav{min-height:66px}.nav-links{gap:13px}.nav-links a{font-size:12px}.nav-links a:nth-child(2),.nav-links a:nth-child(3){display:none}.hero{grid-template-columns:1fr;padding:70px 0 76px}.hero-art{justify-self:stretch;max-width:100%}.term-code{font-size:12px;padding:18px 16px}.three,.experience,.projects,.skills{grid-template-columns:1fr}.projects .project:last-child{grid-column:auto}section{padding:72px 0}.section-top{display:block}.section-copy{margin-top:12px}.cta-panel{padding:36px 24px;display:block}.cta-panel .btn{margin-top:22px}.card{padding:24px}footer .foot{flex-wrap:wrap}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell nav">
+      <a class="brand" href="#home" aria-label="Ferhat Ullah Khan home">F<span>.</span>K</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#skills">Skills</a>
+        <a class="nav-cta" href="#contact">Contact ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="shell hero" id="home">
+      <div>
+        <p class="eyebrow">Software engineering · Microsoft Azure · Full stack</p>
+        <h1>Ferhat Ullah <strong>Khan.</strong></h1>
+        <p class="hero-title">Senior .NET &amp; Azure Full Stack Developer</p>
+        <p class="lede">I build and support enterprise software at the intersection of reliable backends, intuitive frontends, and cloud platforms. My toolkit spans C#, ASP.NET Core, Angular, React, Node.js, and Microsoft Azure.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/ferhat-ullah-khan-72178791/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="status"><i aria-hidden="true"></i> Based in India · Interested in senior engineering opportunities</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-glow"></div>
+        <div class="terminal">
+          <div class="term-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="term-label">developer.config</span></div>
+          <div class="term-code"><span class="code-blue">const</span> engineer = {
+  <span class="code-teal">name</span>: <span class="code-warm">"Ferhat"</span>,
+  <span class="code-teal">focus</span>: <span class="code-warm">"Full Stack"</span>,
+  <span class="code-teal">backend</span>: [
+    <span class="code-warm">"C#"</span>, <span class="code-warm">".NET Core"</span>
+  ],
+  <span class="code-teal">frontend</span>: [
+    <span class="code-warm">"Angular"</span>, <span class="code-warm">"React"</span>
+  ],
+  <span class="code-teal">cloud</span>: <span class="code-warm">"Azure"</span>,
+  <span class="code-teal">mindset</span>: <span class="code-warm">"Keep building"</span>
+};</div>
+        </div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <section class="shell" id="about">
+      <div class="section-top"><div><p class="eyebrow">01 / What I do</p><h2>Engineering for impact.</h2></div><p class="section-copy">Experienced across application development, cloud integration, debugging, production support, and delivery workflows.</p></div>
+      <div class="three">
+        <article class="card"><div class="card-icon">01</div><h3>Backend engineering</h3><p>Developing business logic, REST APIs, and dependable services with C#, ASP.NET Core, Node.js, and data platforms.</p><div class="stack"><span class="tag">C#</span><span class="tag">ASP.NET Core</span><span class="tag">REST APIs</span></div></article>
+        <article class="card"><div class="card-icon">02</div><h3>Cloud &amp; delivery</h3><p>Building and operating solutions with Azure services, deployment pipelines, incident response, and performance-focused improvements.</p><div class="stack"><span class="tag">Azure</span><span class="tag">Azure DevOps</span><span class="tag">CI/CD</span></div></article>
+        <article class="card"><div class="card-icon">03</div><h3>Frontend experiences</h3><p>Creating maintainable, user-focused interfaces with Angular, React, JavaScript, and TypeScript.</p><div class="stack"><span class="tag">Angular</span><span class="tag">React.js</span><span class="tag">TypeScript</span></div></article>
+      </div>
+    </section>
+    <div class="rule"></div>
+    <section class="shell" id="experience">
+      <div class="section-top"><div><p class="eyebrow">02 / Career</p><h2>Professional experience.</h2></div><p class="section-copy">A foundation in enterprise full-stack development across multiple technologies and cloud platforms.</p></div>
+      <div class="experience">
+        <article class="card"><p class="meta">December 2023 — Present</p><h3>Accenture</h3><p class="job">Packaged Application Development Specialist</p><ul class="list"><li>Work on Microsoft's Volume Licensing platform using .NET Core, Angular, and Azure services.</li><li>Support production troubleshooting, Azure deployments, CI/CD, performance optimization, and technical reviews.</li><li>Developed a ValidationService for rules-based amendment request validation.</li><li>Previously supported the GSK Wrapper Platform using .NET Core Web APIs.</li></ul></article>
+        <article class="card"><p class="meta">December 2019 — 2023</p><h3>Hexaware Technologies</h3><p class="job">Senior Software Engineer</p><ul class="list"><li>Contributed to RapidX, Tensai, and AMAZE platforms.</li><li>Worked with Node.js, React, C#, ASP.NET Core, Angular, PostgreSQL, and Microsoft Azure.</li><li>Used OpenTelemetry for tracing and Winston/Morgan for Node.js application logging.</li><li>Worked on cloud automation and integration using Azure services.</li></ul></article>
+      </div>
+    </section>
+    <div class="rule"></div>
+    <section class="shell" id="work">
+      <div class="section-top"><div><p class="eyebrow">03 / Selected work</p><h2>Work that shaped my skills.</h2></div><p class="section-copy">High-level descriptions of professional client engagements. No confidential source code or internal architecture is disclosed.</p></div>
+      <div class="projects">
+        <article class="card project"><div class="num">/ 01</div><p class="kind">Enterprise platform · Accenture</p><h3>Microsoft Volume Licensing</h3><p>Engineering and production support using .NET Core, Angular, Azure services, business-rule validation, and deployment workflows.</p><div class="stack"><span class="tag">.NET Core</span><span class="tag">Angular</span><span class="tag">Azure</span></div></article>
+        <article class="card project"><div class="num">/ 02</div><p class="kind">API platform · Accenture</p><h3>GSK Wrapper Platform</h3><p>Supported business logic, data access, and enterprise API components built with .NET Core Web APIs.</p><div class="stack"><span class="tag">C#</span><span class="tag">Web APIs</span><span class="tag">Azure</span></div></article>
+        <article class="card project"><div class="num">/ 03</div><p class="kind">Full-stack engineering · Hexaware</p><h3>RapidX / Tensai / AMAZE</h3><p>Worked across web applications, backend services, observability, and cloud integrations using React, Node.js, ASP.NET Core, and Azure.</p><div class="stack"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">OpenTelemetry</span></div></article>
+      </div>
+      <p class="project-note">These are professional experience summaries, not claims that client-owned code is available publicly. For public code samples, visit my GitHub repositories.</p>
+      <div class="buttons" style="margin-top:24px"><a class="btn btn-secondary" href="https://github.com/ferhatKhan" target="_blank" rel="noopener noreferrer">View GitHub profile ↗</a></div>
+    </section>
+    <div class="rule"></div>
+    <section class="shell" id="skills">
+      <div class="section-top"><div><p class="eyebrow">04 / Toolkit</p><h2>Technologies I work with.</h2></div></div>
+      <div class="skills">
+        <div class="skill-group"><div class="skill-mark">{ }</div><div><strong>Backend &amp; APIs</strong><p>C#, ASP.NET Core, .NET Core, REST APIs, Node.js, Entity Framework</p></div></div>
+        <div class="skill-group"><div class="skill-mark">&lt;/&gt;</div><div><strong>Frontend</strong><p>Angular, React.js, JavaScript, TypeScript, HTML, CSS</p></div></div>
+        <div class="skill-group"><div class="skill-mark">☁</div><div><strong>Cloud &amp; data</strong><p>Azure App Service, Azure Functions, Azure SQL, Azure DevOps, PostgreSQL, MongoDB</p></div></div>
+        <div class="skill-group"><div class="skill-mark">↗</div><div><strong>Observability &amp; productivity</strong><p>OpenTelemetry, Winston, Morgan; AI-assisted coding with GitHub Copilot, ChatGPT, and Claude</p></div></div>
+      </div>
+    </section>
+    <section class="shell" id="contact">
+      <div class="cta-panel">
+        <div><p class="eyebrow">05 / Let's connect</p><h2>Let's build something useful.</h2><p>I'm interested in connecting with engineering teams and recruiters working on ambitious .NET, Azure, and full-stack software projects.</p></div>
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/ferhat-ullah-khan-72178791/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="shell foot"><span>© <span id="year">2026</span> Ferhat Ullah Khan. Built with HTML &amp; CSS.</span><span><a href="https://github.com/ferhatKhan" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/ferhat-ullah-khan-72178791/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span></div></footer>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
